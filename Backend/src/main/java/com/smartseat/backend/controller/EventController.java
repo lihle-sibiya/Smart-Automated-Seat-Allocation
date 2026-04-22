@@ -1,7 +1,7 @@
-package main.java.controller;
+package com.smartseat.backend.controller;
 
-import main.java.model.Event;
-import main.java.service.EventService;
+import com.smartseat.backend.model.Event;
+import com.smartseat.backend.service.EventService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

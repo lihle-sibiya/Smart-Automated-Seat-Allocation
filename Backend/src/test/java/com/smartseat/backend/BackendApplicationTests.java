@@ -10,4 +10,7 @@ class BackendApplicationTests {
     void contextLoads() {
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> Ofentse-Mothata

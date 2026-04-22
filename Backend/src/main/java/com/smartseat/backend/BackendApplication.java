@@ -10,4 +10,7 @@ public class BackendApplication {
         SpringApplication.run(BackendApplication.class, args);
     }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> Ofentse-Mothata

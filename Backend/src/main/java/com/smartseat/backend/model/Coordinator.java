@@ -1,9 +1,9 @@
-package main.java.model;
+package com.smartseat.backend.model;
 
 import jakarta.persistence.*;
 
 @Entity
-public class Employee {
+public class Coordinator {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -11,19 +11,18 @@ public class Employee {
 
     private String name;
     private String email;
-
-    // Used to match with coordinator
     private String departmentID;
+    private String password;
 
+    // Constructors
+    public Coordinator() {}
 
-    public Employee() {}
-
-    public Employee(String name, String email, String departmentID) {
+    public Coordinator(String name, String email ) {
         this.name = name;
         this.email = email;
-        this.departmentID = departmentID;
     }
 
+    // Getters & Setters
     public Long getId() { return id; }
 
     public String getName() { return name; }
@@ -34,4 +33,7 @@ public class Employee {
 
     public String getDepartmentID() { return departmentID; }
     public void setDepartmentID(String departmentID) { this.departmentID = departmentID; }
+
+    public String getPassword() { return password; }
+    public void setPassword(String password) { this.password = password; }
 }
