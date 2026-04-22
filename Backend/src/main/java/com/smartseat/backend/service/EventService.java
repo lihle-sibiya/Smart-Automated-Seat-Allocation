@@ -1,6 +1,6 @@
-package main.java.service;
+package com.smartseat.backend.service;
 
-import main.java.model.Event;
+import com.smartseat.backend.model.Event;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;

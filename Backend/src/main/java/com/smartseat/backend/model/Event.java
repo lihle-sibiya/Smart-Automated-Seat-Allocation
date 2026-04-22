@@ -1,4 +1,4 @@
-package main.java.model;
+package com.smartseat.backend.model;
 
 import jakarta.persistence.*;
 import java.time.LocalDate;
