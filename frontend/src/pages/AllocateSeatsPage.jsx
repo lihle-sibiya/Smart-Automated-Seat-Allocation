@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-export default function AllocateSeatsPage({
+export default function AllocatedAttendeesPage({
   session,
   event,
-  allocated = [],
-  unallocated = [],
+  allocated,
+  unallocated,
   onAllocate,
   onRemove,
   onDone,
@@ -14,8 +14,7 @@ export default function AllocateSeatsPage({
   const [confirming, setConfirming] = useState(false);
   const [justAdded, setJustAdded] = useState(null);
 
-  const unallocatedArray = Array.isArray(unallocated) ? unallocated : [];
-  const selectedParticipant = unallocatedArray.find((p) => p.id === selectedId);
+  const selectedParticipant = unallocated.find((p) => p.id === selectedId);
 
   const handleConfirm = () => {
     if (!selectedId) return;
